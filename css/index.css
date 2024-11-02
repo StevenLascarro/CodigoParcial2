@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0f3880;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.table-container {
+    display: flex; /* Usar flexbox para disposición en columnas */
+    justify-content: space-between; /* Espacio entre las tablas */
+    margin-top: 20px;
+}
+
+table {
+    width: 45%; /* Ajustar el ancho de la tabla */
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#photo-details {
+    width: 45%; /* Ajustar el ancho de los detalles */
+    margin-left: 20px; /* Espacio entre la tabla y los detalles */
+}
+/* Estilos generales para los botones */
+button {
+    border: 2px solid #0f3880; /* Borde de 2px en azul */
+    background-color: #0f3880; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #0056b3; /* Cambia el fondo a un azul más oscuro al pasar el mouse */
+}
+/* Estilos para el campo de entrada de fecha */
+input[type="date"] {
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 2px solid #0f3880; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 200px; /* Ancho del cuadro de entrada */
+    transition: border-color 0.3s; /* Transición suave al cambiar el borde */
+}
+
+/* Efecto al hacer foco en el campo de entrada */
+input[type="date"]:focus {
+    border-color: #0056b3; /* Cambia el borde a un azul más oscuro al hacer foco */
+    outline: none; /* Quitar el contorno predeterminado */
+}

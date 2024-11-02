@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Rover Photos</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+        
+    <main>
+        <h1>Mars Rover Photos</h1>
+        <h2>Earth Date: <span id="earth-date">2015-07-02</span></h2>
+        <input type="date" id="date-input" value="2015-07-02">
+        <button id="find-button">Find</button>
+
+        <div class="table-container"> <!-- Contenedor para las tablas -->
+            <table id="photos-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Rover Name</th>
+                        <th>Camera</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="photos-body">
+                    <!-- Aquí se agregarán las filas de fotos -->
+                </tbody>
+            </table>
+
+            <div id="photo-details"> <!-- Detalles de la foto -->
+                <h1>Photo Detail</h1>
+                <img id="photo-image" src="" alt="Foto del Rover">
+                <p id="photo-info"></p>
+            </div>
+        </div>
+
+        <div id="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
